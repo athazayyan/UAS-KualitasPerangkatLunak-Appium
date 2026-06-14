@@ -1,0 +1,24 @@
+[versions]
+agp = "9.1.1"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.13.0"
+appium = "8.6.0"
+testng = "7.8.0"
+commons-lang3 = "3.12.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+appium-java-client = { group = "io.appium", name = "java-client", version.ref = "appium" }
+testng = { group = "org.testng", name = "testng", version.ref = "testng" }
+commons-lang3 = { group = "org.apache.commons", name = "commons-lang3", version.ref = "commons-lang3" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
